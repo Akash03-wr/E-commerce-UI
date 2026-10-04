@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         body{
+            background-color: rgb(240, 240, 240);
+         }
+        .delivery{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: rgb(226, 226, 221);
+            margin-top: 100px;
+            margin-left: 430px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn{
+            background-color: gold;
+            height: 40px;
+            width: 230px;
+            padding: 12px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .sign{
+            height: 40px;
+            width: 110px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            background-color: rgb(39, 120, 241);
+            color: white;
+            cursor: pointer;
+            
+        }
+
+        .address{
+            border: none;
+            height: 40px;
+            width: 160px;
+            border-radius: 10px;  
+            padding: 12px 20px; 
+        }
+
+        .pincode{
+            border: none;
+            height: 40px;
+            width: 153px;
+            padding: 12px 20px;
+            border-radius: 5px;
+        }
+        .country{
+            border: none;
+            height: 40px;
+            width: 184px;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .done{
+            height: 30px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: rgb(142, 172, 50);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+         
+       <div class="delivery">
+        <h2>Choose your location</h2>
+        <hr style="width: 100%;">
+        <p>Delivery options and delivery speeds may vary for different locations</p>
+        <button class="btn">sign in to see your address</button> 
+        <input type="text" placeholder="Enter your address" class="address"> <br>
+        <span class="align">
+            <input type="text" placeholder="Enter your pincode" class="pincode"> &nbsp; 
+        <button class="sign">Apply</button>
+        </span>
+        <hr style="width: 100%;">
+        <select class="country">
+            <option value="" hidden>Enter your Country</option>
+            <option value="">India</option>
+            <option value="">USA</option>
+            <option value="">CHINA</option>
+            <option value="">UAE</option>
+            <option value="">PAKISTAN</option>
+         </select>
+
+         <button class="done">Done</button>
+
+       </div>
+</body>
+</html>
