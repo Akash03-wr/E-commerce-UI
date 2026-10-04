@@ -452,4 +452,164 @@ pre{
      text-decoration: none;
 }
 
+/* ===================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+=================================================== */
 
+/* Tablet & Smaller Laptops (Max-Width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .nav {
+        gap: 12px;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .sub-banner {
+        width: 90%;
+        left: 5%;
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+        margin-top: 360px;
+    }
+
+    .sub-footer {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .footer-links {
+        width: 45%;
+    }
+}
+
+/* Tablets & Large Mobile Devices (Max-Width: 768px) */
+@media screen and (max-width: 768px) {
+    .nav {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 60px;
+    }
+
+    /* Make search bar span full width on second row */
+    .search {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 5px;
+    }
+
+    .sub-nav {
+        overflow-x: auto;
+        white-space: nowrap;
+        height: 50px;
+        gap: 15px;
+    }
+
+    .sub-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .banner {
+        height: 280px;
+    }
+
+    .sub-banner {
+        width: 92%;
+        left: 4%;
+        bottom: 8px;
+        font-size: 12px;
+        height: auto;
+        line-height: 1.4;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 260px;
+    }
+
+    .produ {
+        margin: 10px;
+    }
+
+    .produ .single-item {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .prod-img {
+        height: 120px;
+    }
+
+    .sub-footer2 pre {
+        white-space: normal;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+}
+
+/* Mobile Screens (Max-Width: 480px) */
+@media screen and (max-width: 480px) {
+    .delver, 
+    .lang, 
+    .lan {
+        display: none !important;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .sign-in {
+        font-size: 12px;
+    }
+
+    .banner {
+        height: 220px;
+    }
+
+    .sub-banner {
+        display: none;
+    }
+
+    .products-container {
+        grid-template-columns: 1fr;
+        margin-top: 210px;
+        padding: 10px;
+    }
+
+    .back-top,
+    .sub-footer,
+    .sub-footer2 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+
+    .sub-footer2 {
+        height: auto;
+        padding: 15px 5px;
+    }
+}
